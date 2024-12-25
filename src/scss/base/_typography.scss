@@ -12,11 +12,36 @@
   
   */
 
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
+
+
 body {
-  font-family: "Verdana", sans-serif;
+	font-family: "Karla", serif;
   background-color: var(--color-snow);
   color: var(--color-dark-charcoal);
+	font-size:1.8rem;
   font-weight: 400;
-  line-height: 1.4;
-  font-size: 1.4rem;
+	line-height: 150%;
+	letter-spacing: 0;
+}
+
+.heading-xl {
+	font-size: 3.2rem;
+	font-weight: 700;
+	line-height: 100%;
+	letter-spacing: -1px;
+
+}
+.body-md-bold {	
+	font-weight: 700;	
+}
+
+.body-md-regular {
+	font-weight: 400;	 
+}
+
+.body-sm-regular {
+	font-size:1.6rem;
+	font-weight: 400;	
 }

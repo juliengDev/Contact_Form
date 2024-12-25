@@ -68,3 +68,21 @@ button {
   white-space: nowrap;
   border: 0;
 }
+
+.grid {
+  display: grid;
+  grid-gap: 1rem; 
+  grid-template-columns: repeat(4, 1fr);
+
+  @include respond(tab-port) {
+    grid-template-columns: repeat(8, 1fr); 
+  }
+
+  @include respond(desktop) {
+    grid-template-columns: repeat(12, 64px);
+    justify-content: center; 
+    grid-gap: 2rem; 
+  }
+
+  
+}

@@ -16,15 +16,14 @@ ORDER: Base + typography > general layout + grid > page layout > components
 
 1em = 16px
 */
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap");
 :root {
-  --color-dark-charcoal: #312e2c;
-  --color-dark-raspberry: #7a284e;
-  --color-brandy-red: #854632;
-  --color-wenge-brown: #5f564d;
-  --color-eggshell: #f3e5d7;
-  --color-white-coffee: #e3ddd7;
-  --color-snow: #fff7fb;
-  --color-pure-white: #ffffff;
+  --grey-900: #312e2c;
+  --grey-500: #86A2A5;
+  --pure-white: #ffffff;
+  --green-600: #0C7D69;
+  --green-200: #E0F1E8;
+  --red: #D73C3C;
 }
 
 * {
@@ -77,10 +76,33 @@ FONT SIZE SYSTEM (px)
 
   */
 body {
-  font-family: "Verdana", sans-serif;
-  background-color: #fafafa;
+  font-family: "Karla", serif;
+  background-color: var(--color-snow);
+  color: var(--color-dark-charcoal);
+  font-size: 1.8rem;
   font-weight: 400;
-  line-height: 1.4;
+  line-height: 150%;
+  letter-spacing: 0;
+}
+
+.heading-xl {
+  font-size: 3.2rem;
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: -1px;
+}
+
+.body-md-bold {
+  font-weight: 700;
+}
+
+.body-md-regular {
+  font-weight: 400;
+}
+
+.body-sm-regular {
+  font-size: 1.6rem;
+  font-weight: 400;
 }
 
 .centered-div {
@@ -121,15 +143,71 @@ body {
   border: 0;
 }
 
+button {
+  border: none;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  overflow: visible;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  line-height: normal;
+  -webkit-font-smoothing: inherit;
+  -moz-osx-font-smoothing: inherit;
+  -webkit-appearance: none;
+}
+
+.error-message {
+  color: #d8000c;
+  background-color: #ffbaba;
+  padding: 10px;
+  margin-top: 2.4rem;
+  border-radius: 4px;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.grid {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(4, 1fr);
+}
+@media only screen and (min-width: 48rem) and (max-width: 90rem) {
+  .grid {
+    grid-template-columns: repeat(8, 1fr);
+  }
+}
+@media only screen and (min-width: 90rem) {
+  .grid {
+    grid-template-columns: repeat(12, 64px);
+    justify-content: center;
+    grid-gap: 2rem;
+  }
+}
+
 .attribution {
   margin: 1.6rem 0 6rem;
   font-size: 1.1rem;
   text-align: center;
-  color: var(--color-wenge-brown);
+  color: var(--color-dark-charcoal);
 }
 .attribution__credit {
   font-weight: 800;
   color: var(--color-dark-raspberry) !important;
+}
+.attribution a {
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=style.css.map */
