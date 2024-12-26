@@ -2,12 +2,13 @@
   margin: 1.6rem 0 6rem;
   font-size: 1.1rem;
   text-align: center;
-  color: var(--color-dark-charcoal);
+  color: var(--grey-900);
   &__credit {
     font-weight: 800;
-    color: var(--color-dark-raspberry) !important;
+    color: var(--green-600) !important;
   }
   & a {
     cursor: pointer;
   }
 }
+       
