@@ -195,9 +195,61 @@ button {
 }
 @media only screen and (min-width: 90rem) {
   .grid {
-    grid-template-columns: repeat(12, 64px);
+    grid-template-columns: repeat(12, 1fr);
     justify-content: center;
     grid-gap: 2rem;
+  }
+}
+
+.form__heading {
+  grid-column: 1/-1;
+  grid-row: 1;
+}
+@media only screen and (min-width: 48rem) and (max-width: 90rem) {
+  .form__heading {
+    grid-column: 1/-1;
+    grid-row: 1;
+    align-self: start;
+  }
+}
+.form__container {
+  grid-column: 1/-1;
+  grid-row: 2;
+}
+@media only screen and (min-width: 48rem) and (max-width: 90rem) {
+  .form .firstname {
+    grid-column: 1;
+    grid-row: 1;
+  }
+}
+@media only screen and (min-width: 48rem) and (max-width: 90rem) {
+  .form .lastname {
+    grid-column: 2;
+    grid-row: 1;
+  }
+}
+@media only screen and (min-width: 48rem) and (max-width: 90rem) {
+  .form .email {
+    grid-column: 1/-1;
+    grid-row: 2/3;
+  }
+}
+@media only screen and (min-width: 48rem) and (max-width: 90rem) {
+  .form .message {
+    grid-column: 1/-1;
+    grid-row: 5;
+  }
+}
+@media only screen and (min-width: 48rem) and (max-width: 90rem) {
+  .form__consent {
+    grid-column: 1/-1;
+    grid-row: 6;
+  }
+}
+@media only screen and (min-width: 48rem) and (max-width: 90rem) {
+  .form__submit {
+    grid-column: 1/-1;
+    grid-row: 7;
   }
 }
 
@@ -221,19 +273,22 @@ button {
   padding: 2.4rem;
   width: 100%;
   background-color: var(--pure-white);
-  grid-column: 1/-1;
+}
+@media only screen and (min-width: 48rem) and (max-width: 90rem) {
+  .form {
+    padding: 4rem;
+    max-width: 73.8rem;
+  }
+}
+@media only screen and (min-width: 90rem) {
+  .form {
+    padding: 4rem;
+    max-width: 78.4rem;
+  }
 }
 .form__heading {
   color: var(--grey-900);
   margin-bottom: 3.2rem;
-  grid-column: 1/-1;
-  grid-row: 1;
-  align-self: start;
-}
-.form__container {
-  gap: 2.4rem;
-  grid-column: 1/-1;
-  grid-row: 2;
 }
 .form__group {
   display: flex;
@@ -371,6 +426,34 @@ button {
 }
 .form__query {
   border: none;
+}
+.form__query__container {
+  width: 100%;
+  display: flex;
+  gap: 1.6rem;
+  flex-direction: column;
+}
+@media only screen and (min-width: 48rem) and (max-width: 90rem) {
+  .form__query__container {
+    flex-direction: row;
+  }
+  .form__query__container .radio1 {
+    flex-grow: 1;
+  }
+  .form__query__container .radio2 {
+    flex-grow: 1;
+  }
+}
+@media only screen and (min-width: 90rem) {
+  .form__query__container {
+    flex-direction: row;
+  }
+  .form__query__container .radio1 {
+    flex-grow: 1;
+  }
+  .form__query__container .radio2 {
+    flex-grow: 1;
+  }
 }
 .form__query > div:nth-of-type(2) {
   margin-bottom: 1.6rem;

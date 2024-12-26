@@ -13,33 +13,37 @@
   <form class="form grid">
     <h1 class="form__heading heading">Contact Us</h1>
     <div class="form__container body-sm-regular">
-      <div class="form__group ">
+      <div class="form__group firstname">
       <label class="form__group__firstname" for="first-name">First Name</label>
       <input type="text" id="first-name" name="first-name" autocomplete="given-name" aria-invalid="true" aria-describedby="firstname-error" required>
       <span id="firstname-error" class="error-message hidden" style="color: red;">This field is required</span>
     </div>
-    <div class="form__group">
+    <div class="form__group lastname">
       <label class="form__group__lastname" for="last-name">Last Name</label>
       <input type="text" id="last-name" name="last-name" autocomplete="family-name"  aria-invalid="true" aria-describedby="lastname-error" required>
       <span id="lastname-error" class="error-message hidden" style="color: red;">This field is required</span>  
     </div>
-    <div class="form__group">
+    <div class="form__group email">
       <label class="form__group__email" for="email">Email Address</label>
       <input type="email" id="email" name="email" autocomplete="email" aria-invalid="true" aria-describedby="email-error" required>
       <span id="email-error" class="error-message hidden" style="color: red;">Please enter a valid email address.</span>    
     </div>
     <fieldset class="form__group form__query">
+      
       <legend class="form__query__title">Query Type</legend>
-      <div class="form__query__group radio">
-        <input type="radio" name="query-type" id="general" value="general"> 
-        <label class="body-md-regular radio-label" for="general">General Enquiry</label>
+      <div class="form__query__container">
+        <div class="form__query__group radio radio1">
+          <input type="radio" name="query-type" id="general" value="general"> 
+          <label class="body-md-regular radio-label" for="general">General Enquiry</label>
+        </div>
+        <div class="form__query__group radio radio2">
+          <input type="radio" name="query-type" id="support" value="support"> 
+          <label class="body-md-regular radio-label" for="support">Support Request</label>
+        </div>
       </div>
-      <div class="form__query__group radio">
-        <input type="radio" name="query-type" id="support" value="support"> 
-        <label class="body-md-regular radio-label" for="support">Support Request</label>
-      </div>
+      
     </fieldset>
-    <div class="form__group">
+    <div class="form__group message">
       <label for="story">Message</label>
       <textarea class="form__group" id="message" name="message" rows="4" aria-invalid="true" aria-describedby="message-error" required></textarea>
     </div>

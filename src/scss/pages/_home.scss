@@ -4,18 +4,21 @@
   padding: 2.4rem;
   width: 100%;
   background-color: var(--pure-white);
-  grid-column: 1/-1;    
+  
+
+  @include respond(tab-port) {
+    padding: 4rem;
+    max-width: 73.8rem;
+  }
+  
+  @include respond(desktop) {
+    padding: 4rem;
+    max-width: 78.4rem;
+  }
     &__heading {
       color: var(--grey-900);
       margin-bottom: 3.2rem;
-      grid-column: 1/-1;
-      grid-row: 1;
-      align-self: start;
-    }
-    &__container {        
-      gap: 2.4rem;
-      grid-column: 1/-1;
-      grid-row: 2;
+      
     }
     
     &__group {
@@ -84,20 +87,6 @@
         } 
       }
     }
-    // &__consent {
-    //   flex-direction: row;
-    //   align-items: center;
-    //   gap: 1.6rem;
-    //   margin-bottom: 4rem;
-    //   & input {
-    //     width: 24px;
-    //     height: 24px;
-    //   }
-    //   & label {
-    //     align-self: center;          
-    //   }
-      
-    // }
     
     &__consent {
       flex-direction: row;
@@ -172,6 +161,30 @@
       }
     }
     &__query {
+      &__container {
+        width: 100%;
+        display: flex;
+        gap: 1.6rem;
+       flex-direction: column;
+        @include respond(tab-port ) {
+          flex-direction: row;
+          & .radio1 {
+            flex-grow: 1;
+          }
+          & .radio2 {
+            flex-grow: 1;
+          }
+        }
+        @include respond(desktop) {
+          flex-direction: row;
+          & .radio1 {
+            flex-grow: 1;
+          }
+          & .radio2 {
+            flex-grow: 1;
+          }
+        }
+      }
       border: none;    
       & > div:nth-of-type(2){
         margin-bottom: 1.6rem;

@@ -41,6 +41,5 @@ ORDER: Base + typography > general layout + grid > page layout > components
     @media only screen and (min-width: 90rem) {
       @content;
     } //1440px
-  }
- 
+  } 
 }
