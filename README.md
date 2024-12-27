@@ -2,7 +2,6 @@
 
 ![Design preview for the Contact form coding challenge](./design/desktop-preview.jpg)
 
-
 ## Overview
 
 This project is an accessible contact form component that allows users to submit their inquiries while providing real-time validation feedback. It was developed with a strong focus on accessibility, keyboard navigation, and responsive design, following modern front-end development best practices.
@@ -19,7 +18,7 @@ Users should be able to:
 - See hover and focus states for all interactive elements
 
 ### Links
-Live Demo : [Contact Form Component]()
+Live Demo : [Contact Form Component](https://juliengdev-contact-form.netlify.app/)
 
 ## My Process
 
