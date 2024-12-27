@@ -273,6 +273,38 @@ button {
   padding: 2.4rem;
   width: 100%;
   background-color: var(--pure-white);
+  border-radius: 16px;
+}
+.form__container__namegroup {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+@media only screen and (min-width: 48rem) and (max-width: 90rem) {
+  .form__container__namegroup {
+    width: 100%;
+    flex-direction: row;
+    gap: 1.6rem;
+  }
+  .form__container__namegroup .firstname {
+    flex: 1;
+  }
+  .form__container__namegroup .lastname {
+    flex: 1;
+  }
+}
+@media only screen and (min-width: 90rem) {
+  .form__container__namegroup {
+    width: 100%;
+    flex-direction: row;
+    gap: 1.6rem;
+  }
+  .form__container__namegroup .firstname {
+    flex: 1;
+  }
+  .form__container__namegroup .lastname {
+    flex: 1;
+  }
 }
 @media only screen and (min-width: 48rem) and (max-width: 90rem) {
   .form {
@@ -332,9 +364,6 @@ button {
   .form__group input {
     border-color: currentColor;
   }
-}
-.form__group:last-child {
-  margin-bottom: 0;
 }
 .form__group textarea {
   padding: 2.4rem;
