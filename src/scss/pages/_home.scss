@@ -97,9 +97,17 @@
       // }
       &  textarea {
         padding: 2.4rem;
-        min-height: 27.2rem;
+        max-height: 27.2rem;
         border: 1px solid var(--grey-500);
         border-radius: 8px;
+
+        @include respond(tab-port) {
+          max-height: 16.4rem;
+        }
+        @include respond(desktop) {
+          max-height: 16.4rem;
+
+        }
         &:hover{
           border:1px solid var(--green-600);
           cursor: pointer;

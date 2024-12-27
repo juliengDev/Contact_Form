@@ -367,9 +367,19 @@ button {
 }
 .form__group textarea {
   padding: 2.4rem;
-  min-height: 27.2rem;
+  max-height: 27.2rem;
   border: 1px solid var(--grey-500);
   border-radius: 8px;
+}
+@media only screen and (min-width: 48rem) and (max-width: 90rem) {
+  .form__group textarea {
+    max-height: 16.4rem;
+  }
+}
+@media only screen and (min-width: 90rem) {
+  .form__group textarea {
+    max-height: 16.4rem;
+  }
 }
 .form__group textarea:hover {
   border: 1px solid var(--green-600);
