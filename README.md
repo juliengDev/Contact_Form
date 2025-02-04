@@ -4,49 +4,62 @@
 
 ## Overview
 
-This project is an accessible contact form component that allows users to submit their inquiries while providing real-time validation feedback. It was developed with a strong focus on accessibility, keyboard navigation, and responsive design, following modern front-end development best practices.
+This project is an **accessible contact form component** that allows users to submit their inquiries while providing **real-time validation feedback**. It was developed with a strong focus on **accessibility**, **keyboard navigation**, and **responsive design**, following modern front-end development best practices.
 
-### The Challenge
-Users should be able to:
-- Complete the form and see a success toast message upon submission
-- Receive clear validation messages for:
-  - Missing required fields
-  - Incorrectly formatted email addresses
-- Navigate and complete the form using keyboard only
-- Experience full screen reader support for inputs, error messages, and success notifications
-- View the optimal layout across different device screen sizes
-- See hover and focus states for all interactive elements
+---
 
-### Links
-Live Demo : [Contact Form Component](https://juliengdev-contact-form.netlify.app/)
+### Key Features
 
-## My Process
+- **Live form validation** for missing fields and incorrect email formats  
+- **Toast notifications** upon successful submission  
+- **Full keyboard navigation support**  
+- **Screen reader compatibility** for error messages and success notifications  
+- **Responsive layout** that adapts to all screen sizes  
+- **Hover and focus states** for all interactive elements  
 
-### Built With
-- TypeScript for enhanced type safety
-- Semantic HTML5 markup
-- SCSS for advanced styling
-- Mobile-first workflow
-- ARIA attributes for accessibility
-- Real-time form validation
-- Toast notification system
+---
 
-### What I Learned
-This project enhanced my understanding of building accessible and user-friendly forms. Key takeaways include:
+## ♿️ Accessibility Focus
 
-1. Implementing comprehensive form validation with TypeScript
-2. Creating accessible form elements with proper ARIA attributes
-3. Developing a reusable toast notification system
-4. Managing form state and error handling
-5. Ensuring keyboard navigation accessibility
-6. Building responsive layouts for form elements
+Ensuring an inclusive and accessible experience:
+- **Semantic HTML5 Elements** for better structure and readability  
+- **ARIA Attributes** for improved screen reader support  
+  - `aria-required` and `aria-describedby` for input validation feedback  
+  - `role="alert"` for toast notifications  
+- **Keyboard Navigation** for seamless form completion  
+- **Screen Reader Support** with proper labeling and dynamic error messages  
 
-Code examples:
+---
+
+## 📋 Form Validation & User Experience
+
+1. **Real-time validation**  
+   - Required fields prompt instant error messages  
+   - Invalid email formats are detected immediately  
+
+2. **Dynamic error handling**  
+   - Error messages update in real-time as users type  
+   - Clear visual feedback using color contrast and icons  
+
+3. **Toast notifications**  
+   - Success message appears upon valid submission  
+   - Designed to be **non-intrusive** and **accessible**  
+
+---
+
+### Code Examples
+
+#### TypeScript - Form Validation
 ```typescript
-// Form validation with regular expressions
 const NAME_REGEX = /^[A-ZÀ-Ÿ][a-zà-ÿ' -]{1,49}$/;
 
-<!-- Accessible form elements -->
+const validateName = (name: string): boolean => {
+  return NAME_REGEX.test(name);
+};
+```
+
+### Accessible Form Element
+```html
 <input
   type="email"
   id="email"
@@ -55,25 +68,82 @@ const NAME_REGEX = /^[A-ZÀ-Ÿ][a-zà-ÿ' -]{1,49}$/;
 />
 ```
 
-### Continued Development
+---
 
-Future improvements I plan to work on:
-	•	Adding more sophisticated validation patterns
-	•	Implementing form auto-save functionality
-	•	Enhancing animation transitions
-	•	Adding support for file uploads
-	•	Implementing form analytics
+## 🚀 Live Demo
 
-### Useful Resources	
-	
-  - [	MDN Forms Guide ](https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Forms) - Comprehensive guide for building web forms
-  - [WAI-ARIA Practices](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Accessibility/WAI-ARIA_basics) -  Essential patterns for accessible web components.
-  - [W3C Web Accessibility Initiative (WAI)](https://www.w3.org/WAI/) - Provides guidelines and best practices for creating accessible web content.
+[Contact Form Component](#)
 
-## Author
+---
 
-- Website - [Julien Gilbert Portfolio](https://juliengdev.github.io/julien-gilbert-portfolio/)
-- Frontend Mentor - [@juliengDev](https://www.frontendmentor.io/profile/juliengDev)
-- LinkedIn - [Julien Gilbert](https://www.linkedin.com/in/julien-gilbert-reactjs/)
+## 🛠 Built With
 
-Feel free to reach out if you have any questions or feedback about this project!
+- **TypeScript** for strong typing and maintainability
+- **Semantic HTML5** for structured content
+- **SCSS (BEM methodology)** for organized styling
+- **Mobile-first Workflow** for optimal responsiveness
+- **ARIA Attributes** for enhanced accessibility
+- **Real-time Form Validation** for a better user experience
+- **Toast Notification System** for instant feedback
+
+---
+
+## ✨ Continued Development
+
+Future improvements planned:
+- Enhanced validation patterns (phone numbers, strong passwords)
+- Form auto-save functionality
+- Improved animation transitions for smoother UI interactions
+- File upload support for attachments
+- Form analytics tracking to understand user behavior
+
+---
+
+## 📦 Installation
+
+To set up the project locally, follow these steps:
+
+1. **Clone the repository**
+```bash
+git clone https://github.com/juliengDev/contact-form-component.git
+cd contact-form-component
+```
+
+2. **Install dependencies**
+```bash
+npm install
+```
+
+3. **Start the development server**
+```bash
+npm run dev
+```
+
+4. **Build for production**
+```bash
+npm run build
+```
+
+5. **Preview the production build**
+```bash
+npm run preview
+```
+
+---
+
+## 📚 Useful Resources
+
+- [GitHub Repository: Contact Form Component](#)
+- [MDN Forms Guide](https://developer.mozilla.org/en-US/docs/Learn/Forms) - Comprehensive guide for building web forms
+- [WAI-ARIA Practices](https://www.w3.org/WAI/ARIA/apg/) - Essential patterns for accessible web components
+- [W3C Web Accessibility Initiative (WAI)](https://www.w3.org/WAI/) - Best practices for creating accessible web content
+
+---
+
+## 👨‍💻 Author
+
+- **Portfolio** - [Julien Gilbert](#)
+- **GitHub** - [@juliengDev](#)
+- **LinkedIn** - [Julien Gilbert](#)
+
+*Feel free to reach out if you have any feedback or questions!* 🚀
