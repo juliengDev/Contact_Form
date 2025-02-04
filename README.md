@@ -133,7 +133,7 @@ npm run preview
 
 ## 📚 Useful Resources
 
-- [GitHub Repository: Contact Form Component](#)
+- [GitHub Repository: Contact Form Component](https://github.com/juliengDev/Contact_Form)
 - [MDN Forms Guide](https://developer.mozilla.org/en-US/docs/Learn/Forms) - Comprehensive guide for building web forms
 - [WAI-ARIA Practices](https://www.w3.org/WAI/ARIA/apg/) - Essential patterns for accessible web components
 - [W3C Web Accessibility Initiative (WAI)](https://www.w3.org/WAI/) - Best practices for creating accessible web content
@@ -142,8 +142,8 @@ npm run preview
 
 ## 👨‍💻 Author
 
-- **Portfolio** - [Julien Gilbert](#)
-- **GitHub** - [@juliengDev](#)
-- **LinkedIn** - [Julien Gilbert](#)
+- **Portfolio** - [Julien Gilbert](https://juliengilbert.com/)
+- **GitHub** - [@juliengDev](https://github.com/juliengDev)
+- **LinkedIn** - [Julien Gilbert](https://www.linkedin.com/in/julien-gilbert-reactjs/)
 
 *Feel free to reach out if you have any feedback or questions!* 🚀
